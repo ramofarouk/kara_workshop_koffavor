@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">750336672335-6tclqm63f8o2eu2hg1luu3dim48ilgdb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">750336672335</string>
+    <string name="google_api_key" translatable="false">AIzaSyAnD40AVxF4yPeO8DII6DoW_An3Y8bvwUc</string>
+    <string name="google_app_id" translatable="false">1:750336672335:android:6f9fdd727a2041f9e8203a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAnD40AVxF4yPeO8DII6DoW_An3Y8bvwUc</string>
+    <string name="google_storage_bucket" translatable="false">testkaraworkshop.appspot.com</string>
+    <string name="project_id" translatable="false">testkaraworkshop</string>
+</resources>

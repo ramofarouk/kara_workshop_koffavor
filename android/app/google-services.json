@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "750336672335",
+    "project_id": "testkaraworkshop",
+    "storage_bucket": "testkaraworkshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750336672335:android:6f9fdd727a2041f9e8203a",
+        "android_client_info": {
+          "package_name": "com.example.kara_workshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750336672335-6tclqm63f8o2eu2hg1luu3dim48ilgdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnD40AVxF4yPeO8DII6DoW_An3Y8bvwUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750336672335-6tclqm63f8o2eu2hg1luu3dim48ilgdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

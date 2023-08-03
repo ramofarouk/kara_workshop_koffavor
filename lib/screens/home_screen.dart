@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kara_workshop/screens/tabs/acceptation_screen.dart';
 import 'package:kara_workshop/screens/tabs/refusing_screen.dart';
@@ -56,10 +57,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (BuildContext context) => AddFavorScreen()));
+            signUp("test@gmail.com", "123456789");
+            // Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (BuildContext context) => AddFavorScreen()));
           },
           backgroundColor: Theme.of(context).colorScheme.primary,
           child: const Icon(
@@ -69,5 +71,32 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  }
+
+  signUp(email, password) async {
+    var firebaseAuth = FirebaseAuth.instance;
+
+    await firebaseAuth
+        .createUserWithEmailAndPassword(
+      email: email,
+      password: password,
+    )
+        .then((value) {
+      if (value != null) {
+        showDialog(
+            context: context,
+            builder: (BuildContext context) => const Text("Alerte"));
+      } else {
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(
+                builder: (BuildContext context) => AddFavorScreen()),
+            (route) => false);
+        // Navigator.push(
+        //     context,
+        //     MaterialPageRoute(
+        //         builder: (BuildContext context) => AddFavorScreen()));
+      }
+    });
   }
 }
